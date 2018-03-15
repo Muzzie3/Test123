@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1068540174767",
+    "firebase_url": "https://chiraq-a4d66.firebaseio.com",
+    "project_id": "chiraq-a4d66",
+    "storage_bucket": "chiraq-a4d66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068540174767:android:c3193debbcd2a286",
+        "android_client_info": {
+          "package_name": "co.Fatih.Chiraq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068540174767-i5edk43salr0j028ofvh8cbnh8go1g4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.Fatih.Chiraq",
+            "certificate_hash": "0b33ae5af1f7f8cada04c8eeac2037957fa05d2a"
+          }
+        },
+        {
+          "client_id": "1068540174767-erekuvrs8ij7tbfh82h33cbnsa9th52f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpj2KEtz_nB-H9_4Kq0P4C7KYJYIr2kqQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068540174767-erekuvrs8ij7tbfh82h33cbnsa9th52f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
