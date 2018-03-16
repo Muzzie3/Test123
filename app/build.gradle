@@ -2,14 +2,23 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '27.0.2'
+
+
+        defaultConfig {
+            multiDexEnabled true
+        }
+
+
 
     defaultConfig {
         applicationId "co.Fatih.Chiraq"
-        minSdkVersion 16
-        targetSdkVersion 27
+        minSdkVersion 19
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+
+
 
     }
     buildTypes {
@@ -18,19 +27,42 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-}
+
 
 repositories {
     flatDir {
         dirs 'libs'
+        maven { url "http://dl.bintray.com/chat-sdk/chat-sdk-android" }
+        google()
+        maven { url "https://jitpack.io" }
+        mavenLocal()
+
+
     }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+}
+}
+
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':library')
-    compile 'com.google.firebase:firebase-core:11.8.0'
-    //compile 'com.github.iammert:RadioPlayerService:9a0cc8dc94'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':library')
+
+    implementation 'co.chatsdk.chatsdk:chat-sdk-core:4.0.9'
+    implementation 'co.chatsdk.chatsdk:chat-sdk-ui:4.0.9'
+    implementation 'co.chatsdk.chatsdk:chat-sdk-firebase-adapter:4.0.9'
+    implementation 'co.chatsdk.chatsdk:chat-sdk-firebase-file-storage:4.0.9'
+
 }
 
+
+
+
 apply plugin: 'com.google.gms.google-services'
+
+

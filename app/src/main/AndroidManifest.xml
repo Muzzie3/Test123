@@ -25,6 +25,13 @@
                 <action android:name="co.mobiwise.library.notification.media.INTENT_OPENPLAYER"/>
             </intent-filter>
         </receiver>
+
+        <activity android:name="co.chatsdk.ui.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
