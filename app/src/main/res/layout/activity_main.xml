@@ -6,9 +6,19 @@
         android:id="@+id/radioActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="radio"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="112dp"
+        android:text="radio" />
+
+    <Button
+        android:id="@+id/chatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/radioActivity"
+        android:layout_below="@+id/radioActivity"
+        android:layout_marginTop="88dp"
+        android:text="Chat" />
 
 
 </RelativeLayout>

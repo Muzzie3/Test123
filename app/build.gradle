@@ -5,9 +5,9 @@ android {
     buildToolsVersion '27.0.2'
 
 
-        defaultConfig {
-            multiDexEnabled true
-        }
+    defaultConfig {
+        multiDexEnabled true
+    }
 
 
 
@@ -19,7 +19,6 @@ android {
         versionName "1.0"
 
 
-
     }
     buildTypes {
         release {
@@ -29,23 +28,23 @@ android {
     }
 
 
-repositories {
-    flatDir {
-        dirs 'libs'
-        maven { url "http://dl.bintray.com/chat-sdk/chat-sdk-android" }
-        google()
-        maven { url "https://jitpack.io" }
-        mavenLocal()
+    repositories {
+        flatDir {
+            dirs 'libs'
+            maven { url "http://dl.bintray.com/chat-sdk/chat-sdk-android" }
+            google()
+            maven { url "https://jitpack.io" }
+            mavenLocal()
 
 
+        }
+
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
     }
-
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-}
-}
 
 }
 
@@ -58,11 +57,13 @@ dependencies {
     implementation 'co.chatsdk.chatsdk:chat-sdk-firebase-adapter:4.0.9'
     implementation 'co.chatsdk.chatsdk:chat-sdk-firebase-file-storage:4.0.9'
 
+    implementation 'com.google.firebase:firebase-messaging:11.8.0'
 }
 
 
 
 
 apply plugin: 'com.google.gms.google-services'
+
 
 

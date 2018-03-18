@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import co.chatsdk.ui.login.LoginActivity;
 import co.chatsdk.core.session.ChatSDK;
 import co.chatsdk.core.session.Configuration;
 import co.chatsdk.firebase.FirebaseModule;
@@ -21,6 +22,7 @@ public class MainActivity extends Activity {
 
     Button radioActivity;
 //    Button mediaActivity;
+    Button chatButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,14 @@ public class MainActivity extends Activity {
 
 // Activate any other modules you need.
 // ...
+
+        Button chatButton = (Button) findViewById(R.id.chatButton);
+
+        chatButton.setOnClickListener((v) -> {
+
+Intent myIntent = new Intent (MainActivity.this, LoginActivity.class);
+MainActivity.this.startActivity(myIntent);
+        });
 
     }
 
